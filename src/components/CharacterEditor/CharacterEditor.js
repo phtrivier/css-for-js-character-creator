@@ -7,6 +7,7 @@ import {
 import Character from '../Character';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import ControlPane from '../ControlPane';
+import Perspective from '../Perspective';
 
 import {
   bodyOptions,
@@ -16,6 +17,8 @@ import {
   skinColorOptions,
   clothesColorOptions,
 } from './CharacterEditor.helpers';
+
+
 import styles from './CharacterEditor.module.css';
 
 function App() {
@@ -30,7 +33,11 @@ function App() {
 
   return (
     <main className={styles.characterEditor}>
+
+      <Perspective />
+
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
+
         <header className={styles.header}>
           <h1 className={styles.title}>Create your Character</h1>
           <p className={styles.description}>
